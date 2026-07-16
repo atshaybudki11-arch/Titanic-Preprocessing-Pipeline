@@ -82,7 +82,7 @@ Drop Unnecessary Columns
 Train-Test Split
       │
       ▼
-Detect Numerical & Categorical Columns
+Automatic Column Detection
       │
       ▼
 ColumnTransformer
