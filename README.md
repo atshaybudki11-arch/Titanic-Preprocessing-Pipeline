@@ -1,40 +1,39 @@
-> **Note:** This repository currently focuses on the preprocessing stage of the machine learning workflow. Model training and evaluation will be added in future updates.
-
 # 🚢 Titanic Data Preprocessing Pipeline
 
-An end-to-end data preprocessing pipeline built using **Scikit-learn's Pipeline** and **ColumnTransformer**. The project automates data cleaning and feature transformation, producing a machine-learning-ready dataset while following best practices to prevent data leakage.
+An end-to-end machine learning preprocessing pipeline built using **Scikit-learn's Pipeline** and **ColumnTransformer**. This project automates data cleaning and feature transformation while following best practices to prevent data leakage.
+
+> **Status:** ✅ Preprocessing Completed  
+> 🔄 Future updates will include model training, evaluation, and deployment.
 
 ---
 
-## 📌 Project Overview
+## 📖 Overview
 
-The Titanic dataset contains:
-
+Real-world datasets often contain:
 - Missing values
-- Numerical features
 - Categorical features
-- Features with different scales
+- Numerical features with different scales
 
-This project builds reusable preprocessing pipelines that automatically clean and transform the data before it is used for machine learning.
+This project builds reusable preprocessing pipelines that automatically prepare the Titanic dataset for machine learning.
 
 ---
 
 ## ✨ Features
 
-- Train-Test Split
-- Automatic detection of numerical and categorical columns
-- Missing value imputation
-- Min-Max Scaling
-- One-Hot Encoding
-- ColumnTransformer
-- Pipeline
-- Data leakage prevention
-- Processing of unseen Kaggle test data
-- Saving the trained preprocessor using Joblib
+- ✅ Train-Test Split
+- ✅ Automatic detection of numerical and categorical columns
+- ✅ Missing value imputation
+- ✅ Min-Max Scaling
+- ✅ One-Hot Encoding
+- ✅ ColumnTransformer
+- ✅ Scikit-learn Pipelines
+- ✅ Data Leakage Prevention
+- ✅ Processing of unseen Kaggle Test Dataset
+- ✅ Saving the trained preprocessor using Joblib
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠 Technologies
 
 - Python
 - Pandas
@@ -47,19 +46,15 @@ This project builds reusable preprocessing pipelines that automatically clean an
 
 ## 📂 Project Structure
 
-```
+```text
 Titanic-Preprocessing-Pipeline/
 │
+├── assets/
 ├── data/
-│   ├── train.csv
-│   └── test.csv
-│
-├── notebook/
-│   └── Titanic_Preprocessing_Pipeline.ipynb
-│
 ├── models/
 │   └── preprocessor.pkl
-│
+├── notebook/
+│   └── Titanic_Preprocessing_Pipeline.ipynb
 ├── README.md
 ├── requirements.txt
 └── .gitignore
@@ -69,39 +64,41 @@ Titanic-Preprocessing-Pipeline/
 
 ## ⚙️ Workflow
 
-```
+```text
 Raw Dataset
-     │
-     ▼
+      │
+      ▼
 Drop Unnecessary Columns
-     │
-     ▼
+      │
+      ▼
 Train-Test Split
-     │
-     ▼
+      │
+      ▼
 Automatic Column Detection
-     │
-     ▼
+      │
+      ▼
 ColumnTransformer
- ┌───────────────┬────────────────┐
- │               │                │
- ▼               ▼
-Numerical      Categorical
-Pipeline        Pipeline
- │               │
- ▼               ▼
-Imputer        Imputer
- │               │
- ▼               ▼
-MinMaxScaler   OneHotEncoder
+ ├───────────────────────┐
+ │                       │
+ ▼                       ▼
+Numerical Pipeline   Categorical Pipeline
+ │                       │
+ ▼                       ▼
+SimpleImputer       SimpleImputer
+ │                       │
+ ▼                       ▼
+MinMaxScaler       OneHotEncoder
         │
         ▼
 Processed Dataset
+        │
+        ▼
+Saved as preprocessor.pkl
 ```
 
 ---
 
-## 📚 Concepts Demonstrated
+## 🧠 Key Concepts Demonstrated
 
 - Data Preprocessing
 - Feature Engineering
@@ -119,9 +116,9 @@ Processed Dataset
 
 - Train a Logistic Regression model
 - Compare multiple machine learning algorithms
-- Evaluate model performance
-- Generate Kaggle submission
-- Deploy the complete machine learning pipeline
+- Hyperparameter tuning
+- Save the complete preprocessing + model pipeline
+- Deploy using Streamlit
 
 ---
 
