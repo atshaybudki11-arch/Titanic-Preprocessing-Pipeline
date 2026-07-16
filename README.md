@@ -63,7 +63,31 @@ Titanic-Preprocessing-Pipeline/
 ---
 
 ## ⚙️ Workflow
+---
 
+# 📸 Project Screenshots
+
+## 1. Preprocessing Pipeline
+
+![Pipeline](assets/pipeline.png)
+
+---
+
+## 2. Processed Training Data
+
+![Processed Training Data](assets/processed_train_data.png)
+
+---
+
+## 3. Generated Feature Names
+
+![Feature Names](assets/feature_names.png)
+
+---
+
+## 4. Unseen Kaggle Test Dataset
+
+![Kaggle Test](assets/kaggle_test.png)
 ```text
 Raw Dataset
       │
