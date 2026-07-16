@@ -88,7 +88,6 @@ Titanic-Preprocessing-Pipeline/
 ## 4. Unseen Kaggle Test Dataset
 
 ![Kaggle Test](assets/kaggle_test.png)
-```text
 Raw Dataset
       │
       ▼
