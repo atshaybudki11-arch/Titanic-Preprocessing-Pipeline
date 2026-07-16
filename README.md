@@ -1,8 +1,32 @@
 # 🚢 Titanic Data Preprocessing Pipeline
 
-An end-to-end machine learning preprocessing pipeline built using **Scikit-learn Pipelines** and **ColumnTransformer**. This project automates data cleaning and feature engineering while following best practices to prevent **data leakage**.
+<p align="center">
 
-> **Status:** ✅ Completed (Preprocessing Stage)
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Latest-orange?logo=scikitlearn)
+![Pandas](https://img.shields.io/badge/Pandas-Latest-150458?logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-Latest-013243?logo=numpy)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+</p>
+
+An end-to-end Machine Learning preprocessing pipeline built using **Scikit-Learn Pipeline** and **ColumnTransformer**.
+
+This project demonstrates how to preprocess structured datasets while avoiding **data leakage**, making the pipeline reusable for both training data and unseen datasets.
+
+---
+
+## 📚 Table of Contents
+
+- Overview
+- Features
+- Technologies
+- Project Structure
+- Workflow
+- Project Screenshots
+- Key Concepts
+- Future Improvements
+- Author
 
 ---
 
